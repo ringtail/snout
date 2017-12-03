@@ -1,0 +1,49 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "dGXnnR7ZhsrZNnEqFimk6q7YCqs=",
+			"path": "github.com/Sirupsen/logrus",
+			"revision": "61e43dc76f7ee59a82bdf3d71033dc12bea4c77d",
+			"revisionTime": "2017-01-13T01:19:11Z"
+		},
+		{
+			"checksumSHA1": "d9Rs1y1rOWhOOE6tal5O9OpkBEQ=",
+			"path": "github.com/drael/GOnetstat",
+			"revision": "a08125f5157d481dd0d0355c021467bd8c84eb6d",
+			"revisionTime": "2015-11-20T22:08:30Z"
+		},
+		{
+			"checksumSHA1": "cJE7dphDlam/i7PhnsyosNWtbd4=",
+			"path": "github.com/mattn/go-runewidth",
+			"revision": "97311d9f7767e3d6f422ea06661bc2c7a19e8a5d",
+			"revisionTime": "2017-05-10T07:48:58Z"
+		},
+		{
+			"checksumSHA1": "xOuDLNlycARp+sA0Ob/1oWT0mYs=",
+			"path": "github.com/olekukonko/tablewriter",
+			"revision": "a7a4c189eb47ed33ce7b35f2880070a0c82a67d4",
+			"revisionTime": "2017-09-25T23:40:30Z"
+		},
+		{
+			"checksumSHA1": "SnVSA0xgYWfpwzrs+1TiiekTXg0=",
+			"path": "github.com/ringtail/GOnetstat",
+			"revision": "9f661425cded943a2290f913067c16989693ea45",
+			"revisionTime": "2017-12-02T15:43:56Z"
+		},
+		{
+			"checksumSHA1": "3DUI21C1Mi2Q2eO8Qau/W8r+5gs=",
+			"path": "github.com/ringtail/sysctl",
+			"revision": "859a433d06ffddb62f88f013dbf6c5fac05c1f35",
+			"revisionTime": "2017-12-02T15:50:47Z"
+		},
+		{
+			"checksumSHA1": "To5eWGIjHQcw3pQ0N1uFepqaxmE=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "739734461d1c916b6c72a63d7efda2b27edb369f",
+			"revisionTime": "2017-07-07T11:51:12Z"
+		}
+	],
+	"rootPath": "github.com/ringtail/snout"
+}

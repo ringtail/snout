@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="905293a6-4c44-4281-bfb4-ddf7527ca347" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/advisors/advisors.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/advisors/tcp_advisor.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmd/snout/snout.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collectors/collectors.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collectors/netstat.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collectors/netstat_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collectors/system.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/snout.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/version.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resolvers/resolvers.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/memstorage.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/types/manager.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/types/metrics.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/types/report.go" />
-    </list>
+    <list default="true" id="905293a6-4c44-4281-bfb4-ddf7527ca347" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +14,8 @@
       <file leaf-file-name="tcp_advisor.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/advisors/tcp_advisor.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-413">
-              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="232">
+              <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
               <folding>
                 <element signature="e#18#158#0" expanded="true" />
               </folding>
@@ -164,11 +148,6 @@
             <path>
               <item name="snout" type="b2602c69:ProjectViewProjectNode" />
               <item name="snout" type="462c0819:PsiDirectoryNode" />
-              <item name="advisors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snout" type="462c0819:PsiDirectoryNode" />
               <item name="cmd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -201,62 +180,6 @@
               <item name="snout" type="b2602c69:ProjectViewProjectNode" />
               <item name="snout" type="462c0819:PsiDirectoryNode" />
               <item name="types" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;snout&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;snout&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;snout&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;snout&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="drael" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;snout&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="drael" type="462c0819:PsiDirectoryNode" />
-              <item name="GOnetstat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;snout&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="ringtail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;snout&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="ringtail" type="462c0819:PsiDirectoryNode" />
-              <item name="GOnetstat" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -409,9 +332,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="836" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19670959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19670959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5626741" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3983287" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
@@ -889,8 +811,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/advisors/tcp_advisor.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-413">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="232">
+          <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
           <folding>
             <element signature="e#18#158#0" expanded="true" />
           </folding>
