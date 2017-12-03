@@ -1,4 +1,4 @@
-package snout
+package main
 
 import (
 	"flag"

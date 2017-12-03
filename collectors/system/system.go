@@ -1,7 +1,8 @@
-package collectors
+package system
 
 import (
 	"errors"
+	"github.com/ringtail/snout/collectors"
 	"github.com/ringtail/snout/types"
 	"github.com/ringtail/sysctl"
 )
@@ -12,7 +13,7 @@ const (
 
 func init() {
 	sc := &SystemCollector{}
-	Add(sc)
+	collectors.Add(sc)
 }
 
 type SystemCollector struct{}

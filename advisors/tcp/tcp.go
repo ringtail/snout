@@ -1,8 +1,9 @@
-package advisors
+package tcp
 
 import (
 	"fmt"
-	"github.com/ringtail/snout/collectors"
+	"github.com/ringtail/snout/advisors"
+	"github.com/ringtail/snout/collectors/netstat"
 	"github.com/ringtail/snout/storage"
 	"github.com/ringtail/snout/types"
 	"strconv"
@@ -10,7 +11,7 @@ import (
 
 func init() {
 	ta := &TcpAdvisor{}
-	Add(ta)
+	advisors.Add(ta)
 }
 
 var (
@@ -41,7 +42,7 @@ func (ta *TcpAdvisor) Advise() []types.Symptom {
 func handle_tcp_connection() []types.Symptom {
 	//kernel_settings := storage.InternalMetricsTree.FindSection(collectors.KERNEL_SETTINGS)
 	symptoms := make([]types.Symptom, 0)
-	netstat_status := storage.InternalMetricsTree.FindSection(collectors.NETSTAT_STATUS)
+	netstat_status := storage.InternalMetricsTree.FindSection(netstat.NETSTAT_STATUS)
 	time_wait_num, _ := strconv.Atoi(netstat_status.Find("TIME_WAIT"))
 	if time_wait_num > MAX_TIME_OUT_CONNECTION {
 		time_wait_symptom := &types.DefaultSymptom{

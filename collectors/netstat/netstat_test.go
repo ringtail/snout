@@ -1,4 +1,4 @@
-package collectors
+package netstat
 
 import (
 	"github.com/ringtail/GOnetstat"

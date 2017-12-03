@@ -1,7 +1,8 @@
-package collectors
+package netstat
 
 import (
 	"github.com/drael/GOnetstat"
+	"github.com/ringtail/snout/collectors"
 	"github.com/ringtail/snout/types"
 	"strconv"
 )
@@ -12,7 +13,7 @@ const (
 
 func init() {
 	ns := &NetstatCollector{}
-	Add(ns)
+	collectors.Add(ns)
 }
 
 type NetstatCollector struct{}

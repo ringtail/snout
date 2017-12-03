@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="905293a6-4c44-4281-bfb4-ddf7527ca347" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/advisors/all/all.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collectors/all/all.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/advisors/tcp_advisor.go" afterPath="$PROJECT_DIR$/advisors/tcp/tcp.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/collectors/netstat.go" afterPath="$PROJECT_DIR$/collectors/netstat/netstat.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/collectors/netstat_test.go" afterPath="$PROJECT_DIR$/collectors/netstat/netstat_test.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/collectors/system.go" afterPath="$PROJECT_DIR$/collectors/system/system.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/snout.go" afterPath="$PROJECT_DIR$/core/snout.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snout.go" afterPath="$PROJECT_DIR$/snout.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,13 +21,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tcp_advisor.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/advisors/tcp_advisor.go">
+      <file leaf-file-name="tcp.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="64" column="19" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+            <state relative-caret-position="169">
+              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
               <folding>
-                <element signature="e#18#158#0" expanded="true" />
+                <element signature="e#13#199#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -29,19 +37,19 @@
         <entry file="file://$PROJECT_DIR$/snout.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#15#108#0" expanded="true" />
+                <element signature="e#14#107#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+            <state relative-caret-position="270">
+              <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -50,10 +58,32 @@
       <file leaf-file-name="advisors.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/advisors/advisors.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-143">
+            <state relative-caret-position="480">
               <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
               <folding>
                 <element signature="e#18#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/advisors/all/all.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="system.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/collectors/system/system.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+              <folding>
+                <element signature="e#16#141#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,13 +102,33 @@
         </entry>
       </file>
       <file leaf-file-name="netstat.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collectors/netstat.go">
+        <entry file="file://$PROJECT_DIR$/collectors/netstat/netstat.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding>
-                <element signature="e#20#106#0" expanded="true" />
+                <element signature="e#17#143#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="snout.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/snout.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/collectors/all/all.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,7 +164,6 @@
         <option value="$PROJECT_DIR$/types/plugins.go" />
         <option value="$PROJECT_DIR$/collectors/system/netstat.go" />
         <option value="$PROJECT_DIR$/types/manager.go" />
-        <option value="$PROJECT_DIR$/collectors/system/system.go" />
         <option value="$PROJECT_DIR$/core/logger.go" />
         <option value="$PROJECT_DIR$/log/logger.go" />
         <option value="$PROJECT_DIR$/cmd/snout/snout.go" />
@@ -124,7 +173,6 @@
         <option value="$PROJECT_DIR$/../../drael/GOnetstat/gonetstat.go" />
         <option value="$PROJECT_DIR$/collectors/netstat_test.go" />
         <option value="$PROJECT_DIR$/collectors/collectors.go" />
-        <option value="$PROJECT_DIR$/core/snout.go" />
         <option value="$PROJECT_DIR$/storage/memstorage.go" />
         <option value="$PROJECT_DIR$/resolvers/resolvers.go" />
         <option value="$PROJECT_DIR$/advisors/advisors.go" />
@@ -132,8 +180,14 @@
         <option value="$PROJECT_DIR$/collectors/netstat.go" />
         <option value="$PROJECT_DIR$/types/report.go" />
         <option value="$PROJECT_DIR$/advisors/tcp_advisor.go" />
-        <option value="$PROJECT_DIR$/snout.go" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/collectors/system/system.go" />
+        <option value="$PROJECT_DIR$/collectors/netstat/netstat.go" />
+        <option value="$PROJECT_DIR$/collectors/all/all.go" />
+        <option value="$PROJECT_DIR$/advisors/all/all.go" />
+        <option value="$PROJECT_DIR$/core/snout.go" />
+        <option value="$PROJECT_DIR$/snout.go" />
+        <option value="$PROJECT_DIR$/advisors/tcp/tcp.go" />
       </list>
     </option>
   </component>
@@ -144,8 +198,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="39" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="1080" />
     <option name="height" value="836" />
   </component>
   <component name="ProjectView">
@@ -187,10 +242,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/advisors/tcp" />
+      <recent name="$PROJECT_DIR$/collectors/system" />
+      <recent name="$PROJECT_DIR$/collectors/netstat" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/log" />
-      <recent name="$PROJECT_DIR$/collectors" />
-      <recent name="$PROJECT_DIR$/cmd/snout" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -271,7 +327,7 @@
       <go_parameters value="-i" />
       <parameters value="--debug" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/cmd/snout/snout.go" />
+      <filePath value="$PROJECT_DIR$/snout.go" />
       <package value="github.com/ringtail/snout" />
       <directory value="$PROJECT_DIR$" />
     </configuration>
@@ -323,9 +379,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="836" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19670959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19670959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5626741" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3983287" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
@@ -413,22 +468,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/advisors/tcp_advisor.go">
+    <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#18#158#0" expanded="true" />
+            <element signature="e#13#199#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/netstat.go">
+    <entry file="file://$PROJECT_DIR$/collectors/netstat/netstat.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
-            <element signature="e#20#106#0" expanded="true" />
+            <element signature="e#17#143#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -443,12 +498,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/system.go">
+    <entry file="file://$PROJECT_DIR$/collectors/system/system.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
-            <element signature="e#20#105#0" expanded="true" />
+            <element signature="e#16#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -473,12 +528,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/netstat_test.go">
+    <entry file="file://$PROJECT_DIR$/collectors/netstat/netstat_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
-            <element signature="e#20#74#0" expanded="true" />
+            <element signature="e#17#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -491,12 +546,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/system.go">
+    <entry file="file://$PROJECT_DIR$/collectors/system/system.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#20#105#0" expanded="true" />
+            <element signature="e#16#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -517,12 +572,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/system.go">
+    <entry file="file://$PROJECT_DIR$/collectors/system/system.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#20#105#0" expanded="true" />
+            <element signature="e#16#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -543,12 +598,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/system.go">
+    <entry file="file://$PROJECT_DIR$/collectors/system/system.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#20#105#0" expanded="true" />
+            <element signature="e#16#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -650,12 +705,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/netstat_test.go">
+    <entry file="file://$PROJECT_DIR$/collectors/netstat/netstat_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#20#74#0" expanded="true" />
+            <element signature="e#17#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -702,16 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/system.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="e#20#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collectors/collectors.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -754,36 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/snout.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding>
-            <element signature="e#14#172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/netstat.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/advisors/advisors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-          <folding>
-            <element signature="e#18#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/types/report.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
@@ -794,31 +809,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advisors/tcp_advisor.go">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="64" column="19" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+        <state relative-caret-position="270">
+          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectors/system/system.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
-            <element signature="e#18#158#0" expanded="true" />
+            <element signature="e#16#141#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectors/netstat/netstat.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding>
+            <element signature="e#17#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectors/all/all.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advisors/all/all.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/snout.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/snout.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#15#108#0" expanded="true" />
+            <element signature="e#14#107#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/advisors/advisors.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="480">
+          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+          <folding>
+            <element signature="e#18#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#13#199#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -6,6 +6,9 @@ import (
 	"github.com/ringtail/snout/advisors"
 	"github.com/ringtail/snout/collectors"
 	"github.com/ringtail/snout/types"
+
+	_ "github.com/ringtail/snout/advisors/all"
+	_ "github.com/ringtail/snout/collectors/all"
 )
 
 type Plugins interface {
