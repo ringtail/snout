@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="905293a6-4c44-4281-bfb4-ddf7527ca347" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/advisors/all/all.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collectors/all/all.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/advisors/tcp_advisor.go" afterPath="$PROJECT_DIR$/advisors/tcp/tcp.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/collectors/netstat.go" afterPath="$PROJECT_DIR$/collectors/netstat/netstat.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/collectors/netstat_test.go" afterPath="$PROJECT_DIR$/collectors/netstat/netstat_test.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/collectors/system.go" afterPath="$PROJECT_DIR$/collectors/system/system.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/snout.go" afterPath="$PROJECT_DIR$/core/snout.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snout.go" afterPath="$PROJECT_DIR$/snout.go" />
-    </list>
+    <list default="true" id="905293a6-4c44-4281-bfb4-ddf7527ca347" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,6 +214,40 @@
             <path>
               <item name="snout" type="b2602c69:ProjectViewProjectNode" />
               <item name="snout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snout" type="462c0819:PsiDirectoryNode" />
+              <item name="advisors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snout" type="462c0819:PsiDirectoryNode" />
+              <item name="advisors" type="462c0819:PsiDirectoryNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snout" type="462c0819:PsiDirectoryNode" />
+              <item name="advisors" type="462c0819:PsiDirectoryNode" />
+              <item name="tcp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snout" type="462c0819:PsiDirectoryNode" />
+              <item name="collectors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snout" type="462c0819:PsiDirectoryNode" />
+              <item name="collectors" type="462c0819:PsiDirectoryNode" />
+              <item name="netstat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snout" type="462c0819:PsiDirectoryNode" />
+              <item name="collectors" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
