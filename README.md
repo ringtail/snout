@@ -9,6 +9,8 @@
   <p align="center">sniff bad smell about performance</p>
 </p>
 
+# What is snout
+
 snout is command line tool to collect system metrics and give you some advice about performance
 
 # Usage
