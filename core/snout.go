@@ -9,6 +9,7 @@ import (
 
 	_ "github.com/ringtail/snout/advisors/all"
 	_ "github.com/ringtail/snout/collectors/all"
+	"github.com/ringtail/snout/storage"
 )
 
 type Plugins interface {
@@ -33,5 +34,6 @@ func (st *Snout) Run() {
 		return
 	}
 	st.CollectorManager.Start()
+	storage.InternalMetricsTree.DumpAll()
 	st.AdvisorsManager.Start()
 }
