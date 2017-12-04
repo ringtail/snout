@@ -1,7 +1,14 @@
 # snout
+<p align="center">
+    <img width="400"  src="http://snout.oss-cn-beijing.aliyuncs.com/snout.png">
+  <p align="center">sniff bad smell about performance</p>
+</p>
+
 [![Build Status](https://travis-ci.org/ringtail/snout.svg?branch=master)](https://travis-ci.org/ringtail/snout)
 [![Codecov](https://codecov.io/gh/ringtail/snout/branch/master/graph/badge.svg)](https://codecov.io/gh/ringtail/snout)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
+# What is snout
 
 snout is command line tool to collect system metrics and give you some advice about performance
 
