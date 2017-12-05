@@ -15,12 +15,14 @@ func init() {
 }
 
 var (
-	TCP_ADVISOR                = "TCP_ADVISOR"
-	TIME_WAIT_TOO_MUCH_SYMPTOM = "TIME_WAIT_TOO_MUCH"
+	TCP_ADVISOR                 = "TCP_ADVISOR"
+	TIME_WAIT_TOO_MUCH_SYMPTOM  = "TIME_WAIT_TOO_MUCH"
+	CLOSE_WAIT_TOO_MUCH_SYMPTOM = "CLOSE_WAIT_TOO_MUCH"
 )
 
 const (
-	MAX_TIME_OUT_CONNECTION = 200
+	MAX_TIME_OUT_CONNECTION   = 100
+	MAX_CLOSE_WAIT_CONNECTION = 100
 )
 
 type TcpAdvisor struct {
@@ -50,6 +52,10 @@ func handle_tcp_connection() []types.Symptom {
 			Description: fmt.Sprintf("tcp connection state `TIME_WAIT` is too much, current amount is %d", time_wait_num),
 			Advises: []types.Advise{
 				&types.DefaultAdvise{
+					Description: "`TIME_WAIT` means the client initiative close the connection and wait the stack to " +
+						"recycle or reuse the connection, Maybe you use short connection in http client",
+				},
+				&types.DefaultAdvise{
 					Description: "You can reuse tcp connection by set `keepalive` in http client,set `fastcgi_keep_conn` in php-fpm settings",
 				},
 				&types.DefaultAdvise{
@@ -63,5 +69,23 @@ func handle_tcp_connection() []types.Symptom {
 		}
 		symptoms = append(symptoms, time_wait_symptom)
 	}
+	close_wait_num, _ := strconv.Atoi(netstat_status.Find("CLOSE_WAIT"))
+	if close_wait_num > MAX_CLOSE_WAIT_CONNECTION {
+		time_wait_symptom := &types.DefaultSymptom{
+			Name:        CLOSE_WAIT_TOO_MUCH_SYMPTOM,
+			Description: fmt.Sprintf("tcp connection state `CLOSE_WAIT` is too much, current amount is %d", close_wait_num),
+			Advises: []types.Advise{
+				&types.DefaultAdvise{
+					Description: "`CLOSE_WAIT` means some other application close the connection but you don't receive a fin pocket," +
+						"You can check the api provider and close the connection timely",
+				},
+				&types.DefaultAdvise{
+					Description: "`CLOSE_WAIT` could also occur when you client doesn't close response in http client.",
+				},
+			},
+		}
+		symptoms = append(symptoms, time_wait_symptom)
+	}
+
 	return symptoms
 }
