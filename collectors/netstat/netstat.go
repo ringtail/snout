@@ -29,22 +29,27 @@ func (nsc *NetstatCollector) Description() string {
 
 func (nsc *NetstatCollector) Gather() (types.MetricsSection, error) {
 	tcp := GOnetstat.Tcp()
-	tcp_connection_status := make(map[string]string)
-	tcp_ports := make(map[int64]int)
+	udp := GOnetstat.Udp()
+	connection_status := make(map[string]string)
+	ports := make(map[int64]int)
 	for _, p := range tcp {
-		if tcp_connection_status[p.State] == "" {
-			tcp_connection_status[p.State] = "1"
+		if connection_status[p.State] == "" {
+			connection_status[p.State] = "1"
 		} else {
-			times, _ := strconv.Atoi(tcp_connection_status[p.State])
-			tcp_connection_status[p.State] = strconv.Itoa(times + 1)
+			times, _ := strconv.Atoi(connection_status[p.State])
+			connection_status[p.State] = strconv.Itoa(times + 1)
 		}
-		tcp_ports[p.Port] = tcp_ports[p.Port] + 1
+		ports[p.Port] = ports[p.Port] + 1
 	}
 
-	tcp_connection_status [PORTS_USAGE] = strconv.Itoa(len(tcp_ports))
+	for _, u := range udp {
+		ports[u.Port] = ports[u.Port] + 1
+	}
+
+	connection_status [PORTS_USAGE] = strconv.Itoa(len(ports))
 
 	return &types.DefaultMetricsSection{
 		Name:    NETSTAT_STATUS,
-		Metrics: tcp_connection_status,
+		Metrics: connection_status,
 	}, nil
 }
