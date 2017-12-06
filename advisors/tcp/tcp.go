@@ -7,6 +7,8 @@ import (
 	"github.com/ringtail/snout/storage"
 	"github.com/ringtail/snout/types"
 	"strconv"
+	"github.com/ringtail/snout/collectors/system"
+	"strings"
 )
 
 func init() {
@@ -15,9 +17,10 @@ func init() {
 }
 
 var (
-	TCP_ADVISOR                 = "TCP_ADVISOR"
-	TIME_WAIT_TOO_MUCH_SYMPTOM  = "TIME_WAIT_TOO_MUCH"
-	CLOSE_WAIT_TOO_MUCH_SYMPTOM = "CLOSE_WAIT_TOO_MUCH"
+	TCP_ADVISOR                  = "TCP_ADVISOR"
+	TIME_WAIT_TOO_MUCH_SYMPTOM   = "TIME_WAIT_TOO_MUCH"
+	CLOSE_WAIT_TOO_MUCH_SYMPTOM  = "CLOSE_WAIT_TOO_MUCH"
+	PORTS_USAGE_TOO_MUCH_SYMPTOM = "PORTS_USAGE_TOO_MUCH"
 )
 
 const (
@@ -42,7 +45,7 @@ func (ta *TcpAdvisor) Advise() []types.Symptom {
 }
 
 func handle_tcp_connection() []types.Symptom {
-	//kernel_settings := storage.InternalMetricsTree.FindSection(collectors.KERNEL_SETTINGS)
+	kernel_settings := storage.InternalMetricsTree.FindSection(system.KERNEL_SETTINGS)
 	symptoms := make([]types.Symptom, 0)
 	netstat_status := storage.InternalMetricsTree.FindSection(netstat.NETSTAT_STATUS)
 	time_wait_num, _ := strconv.Atoi(netstat_status.Find("TIME_WAIT"))
@@ -85,6 +88,45 @@ func handle_tcp_connection() []types.Symptom {
 			},
 		}
 		symptoms = append(symptoms, time_wait_symptom)
+	}
+
+	ports_total_range := kernel_settings.Find("net.ipv4.ip_local_port_range")
+	if ports_total_range != "" {
+		n := 1
+		ports_total_range_slim := strings.TrimFunc(ports_total_range, func(r rune) bool {
+			if r == ' ' {
+				if n == 1 {
+					n = n + 1
+					return false
+				}
+				return true
+			}
+			return false
+		})
+
+		ports_total_arr := strings.Split(ports_total_range_slim, " ")
+		max, _ := strconv.Atoi(ports_total_arr[1])
+		min, _ := strconv.Atoi(ports_total_arr[0])
+
+		ports_total := max - min
+		ports_usage, _ := strconv.Atoi(netstat_status.Find("PORTS_USAGE"))
+		if float32(ports_usage) > 0.8*float32(ports_total) {
+			ports_usage_symptom := &types.DefaultSymptom{
+				Name:        PORTS_USAGE_TOO_MUCH_SYMPTOM,
+				Description: fmt.Sprintf("Current system ports range is between %s, but ports total usage is %v", ports_total_range, ports_usage),
+				Advises: []types.Advise{
+					&types.DefaultAdvise{
+						Description: "Ports Usage too much means connections is too much,Please check connection status is in normal status  " +
+							"by `netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}' ` ",
+					},
+					&types.DefaultAdvise{
+						Description: "Please check weather your application has too much 504 or 502 timeout in logs, " +
+							"You can also increase port range by `sudo sysctl -w net.ipv4.ip_local_port_range=\"min_port_num max_port_num\"`",
+					},
+				},
+			}
+			symptoms = append(symptoms, ports_usage_symptom)
+		}
 	}
 
 	return symptoms

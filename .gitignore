@@ -5,7 +5,7 @@ __pycache__/
 .idea
 # C extensions
 *.so
-
+snout
 # Distribution / packaging
 .Python
 env/
