@@ -7,8 +7,8 @@ import (
 	"github.com/ringtail/snout/storage"
 	"github.com/ringtail/snout/types"
 	"strconv"
-	"github.com/ringtail/snout/collectors/system"
 	"strings"
+	"github.com/ringtail/snout/collectors/system"
 )
 
 func init() {
@@ -45,9 +45,24 @@ func (ta *TcpAdvisor) Advise() []types.Symptom {
 }
 
 func handle_tcp_connection() []types.Symptom {
-	kernel_settings := storage.InternalMetricsTree.FindSection(system.KERNEL_SETTINGS)
+	tree := storage.InternalMetricsTree
 	symptoms := make([]types.Symptom, 0)
-	netstat_status := storage.InternalMetricsTree.FindSection(netstat.NETSTAT_STATUS)
+	if time_wait_sympton := GetTimeWaitSymptom(tree); time_wait_sympton != nil {
+		symptoms = append(symptoms, time_wait_sympton)
+	}
+
+	if close_wait_sympton := GetCloseWaitSymptom(tree); close_wait_sympton != nil {
+		symptoms = append(symptoms, close_wait_sympton)
+	}
+
+	if GetPortRangeSymptom := GetPortRangeSymptom(tree); GetPortRangeSymptom != nil {
+		symptoms = append(symptoms, GetPortRangeSymptom)
+	}
+	return symptoms
+}
+
+func GetTimeWaitSymptom(metrics_tree *storage.MetricsTree) types.Symptom {
+	netstat_status := metrics_tree.FindSection(netstat.NETSTAT_STATUS)
 	time_wait_num, _ := strconv.Atoi(netstat_status.Find("TIME_WAIT"))
 	if time_wait_num > MAX_TIME_OUT_CONNECTION {
 		time_wait_symptom := &types.DefaultSymptom{
@@ -70,8 +85,13 @@ func handle_tcp_connection() []types.Symptom {
 				},
 			},
 		}
-		symptoms = append(symptoms, time_wait_symptom)
+		return time_wait_symptom
 	}
+	return nil
+}
+
+func GetCloseWaitSymptom(metrics_tree *storage.MetricsTree) types.Symptom {
+	netstat_status := metrics_tree.FindSection(netstat.NETSTAT_STATUS)
 	close_wait_num, _ := strconv.Atoi(netstat_status.Find("CLOSE_WAIT"))
 	if close_wait_num > MAX_CLOSE_WAIT_CONNECTION {
 		time_wait_symptom := &types.DefaultSymptom{
@@ -87,9 +107,14 @@ func handle_tcp_connection() []types.Symptom {
 				},
 			},
 		}
-		symptoms = append(symptoms, time_wait_symptom)
+		return time_wait_symptom
 	}
+	return nil
+}
 
+func GetPortRangeSymptom(metrics_tree *storage.MetricsTree) types.Symptom {
+	kernel_settings := metrics_tree.FindSection(system.KERNEL_SETTINGS)
+	netstat_status := metrics_tree.FindSection(netstat.NETSTAT_STATUS)
 	ports_total_range := kernel_settings.Find("net.ipv4.ip_local_port_range")
 	if ports_total_range != "" {
 		n := 1
@@ -125,9 +150,8 @@ func handle_tcp_connection() []types.Symptom {
 					},
 				},
 			}
-			symptoms = append(symptoms, ports_usage_symptom)
+			return ports_usage_symptom
 		}
 	}
-
-	return symptoms
+	return nil
 }
