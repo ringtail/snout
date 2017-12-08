@@ -98,3 +98,17 @@ func (ds *DefaultSymptom) GetAdviseDescriptions() []string {
 	}
 	return descriptions
 }
+
+func CreateTextDefaultSymptom(name, desc string, adviseDescriptions []string) Symptom {
+	symptom := &DefaultSymptom{
+		Name:        name,
+		Description: desc,
+		Advises:     make([]Advise, 0),
+	}
+	for _, adviseDesc := range adviseDescriptions {
+		symptom.Advises = append(symptom.Advises, &DefaultAdvise{
+			Description: adviseDesc,
+		})
+	}
+	return symptom
+}
