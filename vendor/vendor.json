@@ -15,6 +15,12 @@
 			"revisionTime": "2015-11-20T22:08:30Z"
 		},
 		{
+			"checksumSHA1": "Z2LEpah3ZMTYNpRy7Rd+tI+T+W0=",
+			"path": "github.com/fatih/structs",
+			"revision": "f5faa72e73092639913f5833b75e1ac1d6bc7a63",
+			"revisionTime": "2017-10-20T06:48:19Z"
+		},
+		{
 			"checksumSHA1": "cJE7dphDlam/i7PhnsyosNWtbd4=",
 			"path": "github.com/mattn/go-runewidth",
 			"revision": "97311d9f7767e3d6f422ea06661bc2c7a19e8a5d",
@@ -31,6 +37,12 @@
 			"path": "github.com/ringtail/GOnetstat",
 			"revision": "9f661425cded943a2290f913067c16989693ea45",
 			"revisionTime": "2017-12-02T15:43:56Z"
+		},
+		{
+			"checksumSHA1": "ANQkdJhOGi0XQ5j4UNgoddGzBt8=",
+			"path": "github.com/ringtail/go-statfs",
+			"revision": "38116532c370e865858dd8c3c13dd4978eb7018a",
+			"revisionTime": "2017-12-12T07:46:26Z"
 		},
 		{
 			"checksumSHA1": "3DUI21C1Mi2Q2eO8Qau/W8r+5gs=",

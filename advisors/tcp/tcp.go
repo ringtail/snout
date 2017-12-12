@@ -15,12 +15,14 @@ var (
 	TCP_ADVISOR                  = "TCP_ADVISOR"
 	TIME_WAIT_TOO_MUCH_SYMPTOM   = "TIME_WAIT_TOO_MUCH"
 	CLOSE_WAIT_TOO_MUCH_SYMPTOM  = "CLOSE_WAIT_TOO_MUCH"
+	SYN_SENT_TOO_MUCH_SYMPTOM    = "SYN_SENT_TOO_MUCH"
 	PORTS_USAGE_TOO_MUCH_SYMPTOM = "PORTS_USAGE_TOO_MUCH"
 )
 
 const (
 	MAX_TIME_OUT_CONNECTION   = 20
 	MAX_CLOSE_WAIT_CONNECTION = 20
+	MAX_SYN_SENT_CONNECTION   = 10
 )
 
 type TcpAdvisor struct {
@@ -45,8 +47,12 @@ func (ta *TcpAdvisor) Advise() []types.Symptom {
 		symptoms = append(symptoms, close_wait_sympton)
 	}
 
-	if GetPortRangeSymptom := GetPortRangeSymptom(tree); GetPortRangeSymptom != nil {
-		symptoms = append(symptoms, GetPortRangeSymptom)
+	if port_range_symptom := GetPortRangeSymptom(tree); port_range_symptom != nil {
+		symptoms = append(symptoms, port_range_symptom)
+	}
+
+	if syn_sent_symptom := GetSynSentSymptom(tree); syn_sent_symptom != nil {
+		symptoms = append(symptoms, syn_sent_symptom)
 	}
 	return symptoms
 }

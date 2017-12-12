@@ -44,3 +44,19 @@ func GetCloseWaitSymptom(metrics_tree *storage.MetricsTree) types.Symptom {
 	}
 	return nil
 }
+
+func GetSynSentSymptom(metrics_tree *storage.MetricsTree) types.Symptom {
+	netstat_status := metrics_tree.FindSection(netstat.NETSTAT_STATUS)
+	syn_sent_num, _ := strconv.Atoi(netstat_status.Find("SYN_SENT"))
+	if syn_sent_num > MAX_SYN_SENT_CONNECTION {
+		desc := fmt.Sprintf("tcp connection state `SYN_SENT` is too much, current amount is %d", syn_sent_num)
+		adviseDescs := []string{
+			"`SYN_SENT` is a very short status for tcp connection. It will occur before a connection,too much `SYN_SENT` means " +
+				"Your client send too much request to different domain or ip. Please check weather your pc is hijacked by hacker",
+			"`SYN_SENT` also occur when you create too much requests to a invalid domain or the target network is too slow",
+		}
+		syn_sent_symptom := types.CreateTextDefaultSymptom(SYN_SENT_TOO_MUCH_SYMPTOM, desc, adviseDescs)
+		return syn_sent_symptom
+	}
+	return nil
+}
