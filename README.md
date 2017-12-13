@@ -57,6 +57,11 @@ Examples:
 +--------------------+--------------------------------+----------------------------------------------------------------------------------+
 ```
 
+# Symptom Support
+* tcp stack analysis
+* disk usage analysis
+* network ports usage analysis
+
 # Related Project
 `statfs(df)` implement in golang  (<a href="https://github.com/ringtail/go-statfs">https://github.com/ringtail/go-statfs</a>)
 `sysctl` implement in golang  (<a href="https://github.com/ringtail/sysctl">https://github.com/ringtail/sysctl</a>)
