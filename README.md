@@ -60,6 +60,7 @@ Examples:
 # Symptom Support
 * tcp stack analysis
 * disk usage analysis
+* inode usage analysis
 * network ports usage analysis
 
 # Related Project
