@@ -10,20 +10,20 @@ import (
 )
 
 var (
-	Metrcis_tree *storage.MetricsTree
+	Metrics_tree *storage.MetricsTree
 )
 
 func init() {
-	Metrcis_tree = &storage.MetricsTree{}
-	Metrcis_tree.MetricsSection = make(map[string]types.MetricsSection)
+	Metrics_tree = &storage.MetricsTree{}
+	Metrics_tree.MetricsSection = make(map[string]types.MetricsSection)
 	ks, _ := collectors.Cm.Find(system.KERNEL_SETTINGS).Gather()
-	Metrcis_tree.AddSection(ks)
+	Metrics_tree.AddSection(ks)
 	nt, _ := collectors.Cm.Find(netstat.NETSTAT_STATUS).Gather()
-	Metrcis_tree.AddSection(nt)
+	Metrics_tree.AddSection(nt)
 }
 
 func TestGetCloseWaitSymptom(t *testing.T) {
-	symptom := GetCloseWaitSymptom(Metrcis_tree)
+	symptom := GetCloseWaitSymptom(Metrics_tree)
 	if symptom != nil {
 		t.Logf("pass GetCloseWaitSymptom: %s %s", symptom.GetName(), symptom.GetDescription())
 	}
@@ -31,7 +31,7 @@ func TestGetCloseWaitSymptom(t *testing.T) {
 }
 
 func TestGetTimeWaitSymptom(t *testing.T) {
-	symptom := GetTimeWaitSymptom(Metrcis_tree)
+	symptom := GetTimeWaitSymptom(Metrics_tree)
 	if symptom != nil {
 		t.Logf("pass TestGetTimeWaitSymptom: %s %s", symptom.GetName(), symptom.GetDescription())
 	}
@@ -39,7 +39,7 @@ func TestGetTimeWaitSymptom(t *testing.T) {
 }
 
 func TestGetPortRangeSymptom(t *testing.T) {
-	symptom := GetPortRangeSymptom(Metrcis_tree)
+	symptom := GetPortRangeSymptom(Metrics_tree)
 	if symptom != nil {
 		t.Logf("pass TestGetPortRangeSymptom: %s %s", symptom.GetName(), symptom.GetDescription())
 	}

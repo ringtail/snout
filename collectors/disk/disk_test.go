@@ -3,6 +3,14 @@ package disk
 import (
 	"testing"
 )
+/***
+map[Available:14879744000
+	Capacity:248391270400
+	Usage:233249382400
+	Inodes:60642398
+	InodesFree:3632750
+	InodesUsed:57009648]
+ */
 
 func Test_DiskCollector_Name(t *testing.T) {
 	dc := &DiskCollector{}
