@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="905293a6-4c44-4281-bfb4-ddf7527ca347" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/collectors/disk/disk.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/collectors/disk/disk_test.go" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/advisors/tcp/tcp.go" afterPath="$PROJECT_DIR$/advisors/tcp/tcp.go" />
-      <change beforePath="$PROJECT_DIR$/advisors/tcp/tcp_status.go" afterPath="$PROJECT_DIR$/advisors/tcp/tcp_status.go" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,62 +11,71 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="tcp_ports.go" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp_ports.go">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="67">
+                    <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+                    <folding>
+                      <element signature="e#13#219#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tcp.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp.go">
+      <file leaf-file-name="snout.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/snout.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-              <folding>
-                <element signature="e#13#133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tcp_status.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp_status.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-              <folding>
-                <element signature="e#13#161#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collectors.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collectors/collectors.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+            <state relative-caret-position="405">
+              <caret line="37" column="25" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="disk.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/collectors/disk/disk.go">
+      <file leaf-file-name="advisors.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/advisors/advisors.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-              <folding>
-                <element signature="e#14#208#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="600">
+              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="disk_test.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collectors/disk/disk_test.go">
+      <file leaf-file-name="symptom.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/types/symptom.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-              <folding>
-                <element signature="e#14#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="564">
+              <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="853">
+                <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -115,28 +120,32 @@
         <option value="$PROJECT_DIR$/../../drael/GOnetstat/gonetstat.go" />
         <option value="$PROJECT_DIR$/collectors/netstat_test.go" />
         <option value="$PROJECT_DIR$/resolvers/resolvers.go" />
-        <option value="$PROJECT_DIR$/advisors/advisors.go" />
         <option value="$PROJECT_DIR$/../../olekukonko/tablewriter/table.go" />
         <option value="$PROJECT_DIR$/collectors/netstat.go" />
         <option value="$PROJECT_DIR$/advisors/tcp_advisor.go" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/collectors/system/system.go" />
-        <option value="$PROJECT_DIR$/advisors/all/all.go" />
         <option value="$PROJECT_DIR$/snout.go" />
-        <option value="$PROJECT_DIR$/collectors/all/all.go" />
         <option value="$PROJECT_DIR$/storage/memstorage.go" />
         <option value="$PROJECT_DIR$/collectors/collectors.go" />
-        <option value="$PROJECT_DIR$/core/snout.go" />
         <option value="$PROJECT_DIR$/collectors/memory/memory.go" />
         <option value="$PROJECT_DIR$/collectors/netstat/netstat.go" />
-        <option value="$PROJECT_DIR$/advisors/tcp/tcp_test.go" />
         <option value="$PROJECT_DIR$/types/report.go" />
         <option value="$PROJECT_DIR$/advisors/tcp/tcp_ports.go" />
         <option value="$PROJECT_DIR$/advisors/tcp/tcp.go" />
         <option value="$PROJECT_DIR$/advisors/tcp/tcp_status.go" />
         <option value="$PROJECT_DIR$/../go-statfs/statfs.go" />
-        <option value="$PROJECT_DIR$/collectors/disk/disk_test.go" />
         <option value="$PROJECT_DIR$/collectors/disk/disk.go" />
+        <option value="$PROJECT_DIR$/collectors/all/all.go" />
+        <option value="$PROJECT_DIR$/collectors/disk/disk_test.go" />
+        <option value="$PROJECT_DIR$/advisors/disk/disk.go" />
+        <option value="$PROJECT_DIR$/advisors/all/all.go" />
+        <option value="$PROJECT_DIR$/advisors/tcp/tcp_test.go" />
+        <option value="$PROJECT_DIR$/advisors/disk/disk_test.go" />
+        <option value="$PROJECT_DIR$/advisors/disk/inode.go" />
+        <option value="$PROJECT_DIR$/core/snout.go" />
+        <option value="$PROJECT_DIR$/advisors/advisors.go" />
+        <option value="$PROJECT_DIR$/types/symptom.go" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -150,7 +159,7 @@
     <option name="x" value="1440" />
     <option name="y" value="-653" />
     <option name="width" value="1080" />
-    <option name="height" value="1897" />
+    <option name="height" value="1849" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -177,41 +186,16 @@
             <path>
               <item name="snout" type="b2602c69:ProjectViewProjectNode" />
               <item name="snout" type="462c0819:PsiDirectoryNode" />
-              <item name="collectors" type="462c0819:PsiDirectoryNode" />
+              <item name="advisors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="snout" type="b2602c69:ProjectViewProjectNode" />
               <item name="snout" type="462c0819:PsiDirectoryNode" />
-              <item name="collectors" type="462c0819:PsiDirectoryNode" />
-              <item name="disk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snout" type="462c0819:PsiDirectoryNode" />
-              <item name="collectors" type="462c0819:PsiDirectoryNode" />
-              <item name="memory" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="snout" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;snout&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;snout&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="snout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;snout&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -249,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.Test_DiskCollector_Gather in disk_test.go">
+  <component name="RunManager" selected="Go Test.Test_GetInodeSymptom in disk_test.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="snout" />
       <working_directory value="$PROJECT_DIR$" />
@@ -269,14 +253,23 @@
       <package value="github.com/ringtail/snout" />
       <directory value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="TestNetstatLib in netstat_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+    <configuration name="Test_DiskAdvisor_Advise in disk_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
       <module name="snout" />
-      <working_directory value="$PROJECT_DIR$/collectors" />
+      <working_directory value="$PROJECT_DIR$/advisors/disk" />
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/ringtail/snout/collectors" />
-      <pattern value="^TestNetstatLib$" />
+      <package value="github.com/ringtail/snout/advisors/disk" />
+      <pattern value="^Test_DiskAdvisor_Advise$" />
+    </configuration>
+    <configuration name="Test_DiskAdvisor_Name in disk_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="snout" />
+      <working_directory value="$PROJECT_DIR$/advisors/disk" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/ringtail/snout/advisors/disk" />
+      <pattern value="^Test_DiskAdvisor_Name$" />
     </configuration>
     <configuration name="Test_DiskCollector_Gather in disk_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
       <module name="snout" />
@@ -286,6 +279,15 @@
       <kind value="PACKAGE" />
       <package value="github.com/ringtail/snout/collectors/disk" />
       <pattern value="^Test_DiskCollector_Gather$" />
+    </configuration>
+    <configuration name="Test_GetInodeSymptom in disk_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="snout" />
+      <working_directory value="$PROJECT_DIR$/advisors/disk" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/ringtail/snout/advisors/disk" />
+      <pattern value="^Test_GetInodeSymptom$" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="snout" />
@@ -337,17 +339,21 @@
         </settings>
       </deployment>
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Go Build.snout" />
-      <item index="1" class="java.lang.String" itemvalue="Go Test.TestNetstatLib in netstat_test.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Test.tcp_test.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Test.Test_DiskCollector_Gather in disk_test.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Test.tcp_test.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Test.Test_DiskCollector_Gather in disk_test.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Test.Test_DiskAdvisor_Advise in disk_test.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Test.Test_GetInodeSymptom in disk_test.go" />
+      <item index="5" class="java.lang.String" itemvalue="Go Test.Test_DiskAdvisor_Name in disk_test.go" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Go Test.Test_DiskCollector_Gather in disk_test.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Test.tcp_test.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Test.TestNetstatLib in netstat_test.go" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Go Test.Test_GetInodeSymptom in disk_test.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Test.Test_DiskAdvisor_Advise in disk_test.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Test.Test_DiskAdvisor_Name in disk_test.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Test.Test_DiskCollector_Gather in disk_test.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Test.tcp_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -355,50 +361,51 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNetstatLib_in_netstat_test_go - 2017.12.02 at 23h 47m 15s.xml">
-      <configuration name="TestNetstatLib in netstat_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test_DiskAdvisor_Advise_in_disk_test_go - 2017.12.13 at 15h 09m 43s.xml">
+      <configuration name="Test_DiskAdvisor_Advise in disk_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_DiskCollector_Gather_in_disk_test_go - 2017.12.12 at 15h 53m 56s.xml">
+    <history-entry file="Test_DiskAdvisor_Advise_in_disk_test_go - 2017.12.13 at 15h 10m 26s.xml">
+      <configuration name="Test_DiskAdvisor_Advise in disk_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_DiskAdvisor_Name_in_disk_test_go - 2017.12.13 at 15h 07m 00s.xml">
+      <configuration name="Test_DiskAdvisor_Name in disk_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_DiskAdvisor_Name_in_disk_test_go - 2017.12.13 at 15h 09m 31s.xml">
+      <configuration name="Test_DiskAdvisor_Name in disk_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_DiskCollector_Gather_in_disk_test_go - 2017.12.13 at 15h 07m 23s.xml">
       <configuration name="Test_DiskCollector_Gather in disk_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_DiskCollector_Gather_in_disk_test_go - 2017.12.12 at 15h 55m 27s.xml">
+    <history-entry file="Test_DiskCollector_Gather_in_disk_test_go - 2017.12.13 at 15h 09m 19s.xml">
       <configuration name="Test_DiskCollector_Gather in disk_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_DiskCollector_Gather_in_disk_test_go - 2017.12.12 at 15h 57m 08s.xml">
-      <configuration name="Test_DiskCollector_Gather in disk_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test_GetInodeSymptom_in_disk_test_go - 2017.12.13 at 15h 06m 54s.xml">
+      <configuration name="Test_GetInodeSymptom in disk_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_DiskCollector_Gather_in_disk_test_go - 2017.12.12 at 15h 57m 30s.xml">
-      <configuration name="Test_DiskCollector_Gather in disk_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test_GetInodeSymptom_in_disk_test_go - 2017.12.13 at 15h 10m 59s.xml">
+      <configuration name="Test_GetInodeSymptom in disk_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.02 at 22h 46m 28s.xml">
-      <configuration name="Unnamed" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test_GetInodeSymptom_in_disk_test_go - 2017.12.13 at 15h 11m 20s.xml">
+      <configuration name="Test_GetInodeSymptom in disk_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="tcp_test_go - 2017.12.07 at 22h 45m 43s.xml">
-      <configuration name="tcp_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="tcp_test_go - 2017.12.07 at 22h 55m 09s.xml">
-      <configuration name="tcp_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="tcp_test_go - 2017.12.08 at 17h 30m 32s.xml">
-      <configuration name="tcp_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="tcp_test_go - 2017.12.08 at 17h 34m 39s.xml">
-      <configuration name="tcp_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test_GetInodeSymptom_in_disk_test_go - 2017.12.13 at 15h 12m 06s.xml">
+      <configuration name="Test_GetInodeSymptom in disk_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-653" width="1080" height="1897" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36705202" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0019267823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3983287" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6694772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4890388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3979764" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3979764" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -406,7 +413,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5626741" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -449,7 +455,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/types/symptom.go</url>
-          <line>72</line>
+          <line>77</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
@@ -467,8 +473,20 @@
           <line>99</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/advisors/disk/disk_test.go</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/advisors/disk/disk_test.go</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="51" />
+      <option name="time" value="55" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="GoApplicationRunConfiguration">
@@ -524,27 +542,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resolvers/resolvers.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/system/system.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/version.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/snout.go" />
     <entry file="file://$PROJECT_DIR$/../../Sirupsen/logrus/logrus.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -662,46 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/advisors/all/all.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/types/manager.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/all/all.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/go/src/os/dir_unix.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -758,13 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advisors/advisors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collectors/netstat/netstat.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -772,32 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/types/metrics.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/types/symptom.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp_ports.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -822,31 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/snout.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp_status.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding>
-            <element signature="e#13#161#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/collectors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collectors/memory/memory.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -865,33 +768,164 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/collectors/all/all.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectors/collectors.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp_status.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding>
+            <element signature="e#13#161#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+        <state relative-caret-position="345">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding>
-            <element signature="e#13#133#0" expanded="true" />
+            <element signature="e#13#133#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp_ports.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#13#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advisors/disk/disk_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#14#192#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collectors/disk/disk_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="345">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding>
-            <element signature="e#14#35#0" expanded="true" />
+            <element signature="e#14#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collectors/disk/disk.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        <state relative-caret-position="210">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advisors/disk/inode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#14#208#0" expanded="true" />
+            <element signature="e#14#193#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advisors/disk/disk.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#134#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advisors/tcp/tcp_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advisors/all/all.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/types/manager.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/snout.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="37" column="25" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advisors/advisors.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/types/symptom.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="853">
+            <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>
