@@ -4,6 +4,7 @@ import (
 	"github.com/olekukonko/tablewriter"
 	"github.com/ringtail/snout/resolvers"
 	"os"
+	"fmt"
 )
 
 /**
@@ -56,22 +57,27 @@ func (ddr *DefaultDiagnosticReport) GetSymptom() []Symptom {
 }
 
 func (ddr *DefaultDiagnosticReport) Print() {
+	if len(ddr.GetSymptom()) == 0 {
+		fmt.Println("Snout doesn't sniff any bad smell about performance in your system")
+		return
+	}
+	table := tablewriter.NewWriter(os.Stdout)
+	//table.SetAutoMergeCells(true)
+	table.SetHeader([]string{"Symptom", "Description", "Advises"})
+
 	for _, symptom := range ddr.GetSymptom() {
 		data := make([][]string, 0)
 		for _, adviseDescription := range symptom.GetAdviseDescriptions() {
 			data = append(data, []string{symptom.GetName(), symptom.GetDescription(), adviseDescription})
 		}
 
-		table := tablewriter.NewWriter(os.Stdout)
-		//table.SetAutoMergeCells(true)
-		table.SetHeader([]string{"Symptom", "Description", "Advises"})
-
 		table.SetAutoMergeCells(true)
 		table.SetRowLine(true)
 		table.SetColMinWidth(2, 80)
 		table.AppendBulk(data) // Add Bulk Data
-		table.Render()
+
 	}
+	table.Render()
 }
 
 type DefaultSymptom struct {

@@ -5,4 +5,5 @@ import (
 	_ "github.com/ringtail/snout/collectors/system"
 	_ "github.com/ringtail/snout/collectors/memory"
 	_ "github.com/ringtail/snout/collectors/cpu"
+	_ "github.com/ringtail/snout/collectors/disk"
 )
