@@ -1,0 +1,28 @@
+package sys
+
+type ArchType int
+type OSType int
+
+const (
+	ARCH_NONE ArchType = iota
+	ARCH_ARM
+	ARCH_ARM64
+	ARCH_MIPS
+	ARCH_PPC
+	ARCH_SPARC
+	ARCH_SPARC64
+	ARCH_M68K
+	ARCH_X86
+	ARCH_X86_64
+)
+
+const (
+	OS_NONE OSType = iota
+	OS_LINUX
+	OS_DARWIN
+	OS_WIN
+	OS_FREEBSD
+	OS_NETBSD
+	OS_OPENBSD
+	OS_SOLARIS
+)
