@@ -80,7 +80,7 @@ func GatherAllProcessCpuUsage() map[string] float64{
 		}
 		cpu, err := strconv.ParseFloat(ft[2], 64)
 		if err != nil {
-			log.Errorf("Failed to parse pid cpuusage from %s", ft[2])
+			log.Errorf("Failed to parse pid cpu usage from %s", ft[2])
 		}
 		processCPUUsages[pidStr] = cpu
 
@@ -92,7 +92,7 @@ func convertCPUToStringMap(processCPU map[string] float64) map[string] string {
 	processCPUString := make(map[string]string)
 	for pid, cpu := range processCPU {
 		if cpu > CPU_USAGE_THRESHOLD {
-			processCPUString[pid] = fmt.Sprintf("%s", cpu)
+			processCPUString[pid] = fmt.Sprintf("%f", cpu)
 		}
 	}
 	return processCPUString
