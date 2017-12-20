@@ -21,6 +21,54 @@
 			"revisionTime": "2017-10-20T06:48:19Z"
 		},
 		{
+			"checksumSHA1": "YlH8m7ins7mlVyjsm5vo11hjUNc=",
+			"path": "github.com/lunixbochs/ghostrace",
+			"revision": "4410d44f27b61f86a8b6901ce307928bcd5635df",
+			"revisionTime": "2017-12-05T19:00:53Z"
+		},
+		{
+			"checksumSHA1": "SxC7f1n6HYiyYEilAYuvkRpm1I0=",
+			"path": "github.com/lunixbochs/ghostrace/ghost",
+			"revision": "4410d44f27b61f86a8b6901ce307928bcd5635df",
+			"revisionTime": "2017-12-05T19:00:53Z"
+		},
+		{
+			"checksumSHA1": "50Kn3lWHPz1kjnK8faEN5gpzHRU=",
+			"path": "github.com/lunixbochs/ghostrace/ghost/memio",
+			"revision": "4410d44f27b61f86a8b6901ce307928bcd5635df",
+			"revisionTime": "2017-12-05T19:00:53Z"
+		},
+		{
+			"checksumSHA1": "JBhvhs5nXUSmZzxPfY1vsS5DGTc=",
+			"path": "github.com/lunixbochs/ghostrace/ghost/process",
+			"revision": "4410d44f27b61f86a8b6901ce307928bcd5635df",
+			"revisionTime": "2017-12-05T19:00:53Z"
+		},
+		{
+			"checksumSHA1": "frd9a7CLsPndk5KzjT5d4iENs6o=",
+			"path": "github.com/lunixbochs/ghostrace/ghost/sys",
+			"revision": "4410d44f27b61f86a8b6901ce307928bcd5635df",
+			"revisionTime": "2017-12-05T19:00:53Z"
+		},
+		{
+			"checksumSHA1": "tbYiT83e/vFuskcGYg9fHh7pYsQ=",
+			"path": "github.com/lunixbochs/ghostrace/ghost/sys/call",
+			"revision": "4410d44f27b61f86a8b6901ce307928bcd5635df",
+			"revisionTime": "2017-12-05T19:00:53Z"
+		},
+		{
+			"checksumSHA1": "k9unnxDyCVIQhuzIXkuvLpdFo0A=",
+			"path": "github.com/lunixbochs/ghostrace/ghost/sys/num",
+			"revision": "4410d44f27b61f86a8b6901ce307928bcd5635df",
+			"revisionTime": "2017-12-05T19:00:53Z"
+		},
+		{
+			"checksumSHA1": "VFKWmbPCdSOahktIMpHBeNVrOVM=",
+			"path": "github.com/lunixbochs/struc",
+			"revision": "ef56447db6a068ad9e52bc54a1aff5fb9e1ed2dd",
+			"revisionTime": "2017-08-31T18:37:20Z"
+		},
+		{
 			"checksumSHA1": "cJE7dphDlam/i7PhnsyosNWtbd4=",
 			"path": "github.com/mattn/go-runewidth",
 			"revision": "97311d9f7767e3d6f422ea06661bc2c7a19e8a5d",
