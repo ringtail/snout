@@ -65,7 +65,7 @@ func GatherMaxCPUProcessMetric() map[string]string {
 	systemCallMetric := make(map[string]string)
 	pid, cpu := getMaxCpuProcess()
 
-	systemCallMetric["PID"] = fmt.Sprintf("%f", pid)
+	systemCallMetric["PID"] = fmt.Sprintf("%d", pid)
 	systemCallMetric["CURRENT_CPU_USAGE"] = fmt.Sprintf("%f", cpu)
 
 	systemCallRecord, err := GatherProcessSystemCallWithinTime(pid, TRACE_TIME)

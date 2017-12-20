@@ -1,10 +1,1 @@
 
-mode: atomic
-github.com/ringtail/snout/collectors/netstat/netstat.go:14.13,17.2 2 1
-github.com/ringtail/snout/collectors/netstat/netstat.go:21.44,23.2 1 2
-github.com/ringtail/snout/collectors/netstat/netstat.go:25.51,27.2 1 0
-github.com/ringtail/snout/collectors/netstat/netstat.go:29.69,32.24 3 0
-github.com/ringtail/snout/collectors/netstat/netstat.go:40.2,43.8 1 0
-github.com/ringtail/snout/collectors/netstat/netstat.go:32.24,33.43 1 0
-github.com/ringtail/snout/collectors/netstat/netstat.go:33.43,35.4 1 0
-github.com/ringtail/snout/collectors/netstat/netstat.go:35.4,38.4 2 0
