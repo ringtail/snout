@@ -14,9 +14,9 @@ snout is command line tool to collect system metrics and give you some advice ab
 
 # Usage
 
-```
-wget https://snout.oss-cn-beijing.aliyuncs.com/snout
+Download snout with command `wget https://snout.oss-cn-beijing.aliyuncs.com/snout`,run `chmod +x snout` and then run snout with sudo 
 
+```
 =====================================================
 
      ███████╗███╗   ██╗ ██████╗ ██╗   ██╗████████╗
